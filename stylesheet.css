@@ -7,7 +7,9 @@
 
 
 }
-
+body, html {
+  overflow-x: hidden;
+}
 body {
     color: #ededed;
     background: #081b29;
@@ -20,18 +22,19 @@ body {
     display: none;
 }
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    padding: 20px 10%;
-    background: #081b29;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 1200px; /* or your preferred max width */
+  margin: 0 auto;
+  padding: 20px 2rem; /* smaller padding */
+  background: #081b29;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  box-sizing: border-box;
 }
 
 .navbar {
@@ -108,7 +111,7 @@ body {
     color: #fff;
     text-decoration: none;
     font-weight: 400;
-    margin-left: 35px;
+    margin-left: 25px;
     transition: 0.4s ease;
     opacity: 0;
     animation: slideTop .5s ease forwards;
@@ -414,7 +417,7 @@ html {
         text-align: center;
         height: auto;
         padding: 3.5rem 5%;
-        width: 104vw;
+        width: 100%;
     }
 
     .home-content, .home-img {
