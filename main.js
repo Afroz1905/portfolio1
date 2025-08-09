@@ -1,15 +1,27 @@
-var typed = new Typed(".text", {
-    strings: ["AI Student", "Full-Stack Developer", "Frontend Developer"],
-    typeSpeed: 100,
-    backSpeed: 100,
-    backDelay: 1000,
-    loop: true
+const menuIcon = document.getElementById('menu-icon');
+const navbar = document.querySelector('.navbar');
+const navLinks = document.querySelectorAll('.navbar a');
+
+// Toggle menu
+menuIcon.addEventListener('click', (event) => {
+    event.stopPropagation(); // Prevent click from closing immediately
+    navbar.classList.toggle('active');
 });
 
-const hamburger = document.querySelector(".menu-icon"); // ✅ match HTML
-const navbar = document.querySelector(".navbar");
+// Close when clicking a nav link
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navbar.classList.remove('active');
+    });
+});
 
-hamburger.addEventListener("click", () => {
-    navbar.classList.toggle("active");
-    hamburger.classList.toggle("active");
+// Close when clicking anywhere outside the menu
+document.addEventListener('click', (event) => {
+    if (
+        navbar.classList.contains('active') &&
+        !navbar.contains(event.target) &&
+        event.target !== menuIcon
+    ) {
+        navbar.classList.remove('active');
+    }
 });
