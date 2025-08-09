@@ -352,7 +352,11 @@ html {
         opacity: 1;
     }
 }
-
+@media (max-width: 1024px) {
+     .home-content, .about-img {
+        flex: none; /* Remove flex grow on smaller screens */
+        width: 100%;}
+    }
 /* Responsive Design */
 @media (max-width: 1024px) {
     .home {
