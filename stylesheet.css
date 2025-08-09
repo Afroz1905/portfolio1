@@ -367,11 +367,7 @@ html {
         width: 100%;
     }
 
-    .home-img .img-box {
-       width: 60vw;
-        height: 35vh;
-    }
-
+    
     .home-sci a {
         width: 2rem;
         height: 2rem;
@@ -382,7 +378,7 @@ html {
         padding: 0.625rem 1.25rem;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     .home-img {
         margin-top: 3rem; /* More margin for better spacing */
         display: flex;
@@ -390,6 +386,11 @@ html {
         align-items: center;
         
     }
+    .home-img .img-box {
+       width: 60vw;
+        height: 35vh;
+    }
+
 }
 
 @media (max-width: 480px) {
