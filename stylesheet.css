@@ -1436,6 +1436,9 @@ button:hover {
   color: #000;
   box-shadow: 0 5px 20px rgba(255, 230, 0, 0.7);
 }
+.contact-wrapper, .footer-container {
+  padding: 0 15px;
+}
 
 .footer-bottom {
   text-align: center;
