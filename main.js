@@ -25,3 +25,29 @@ document.addEventListener('click', (event) => {
         navbar.classList.remove('active');
     }
 });
+const certTrack = document.querySelector('.cert-track');
+let scrollAmount = 0;
+let isPaused = false;
+
+function autoScroll() {
+  if (!isPaused) {
+    scrollAmount += 1; // adjust speed here
+    if (scrollAmount >= certTrack.scrollWidth / 2) {
+      scrollAmount = 0; // loop back to start
+    }
+    certTrack.scrollLeft = scrollAmount;
+  }
+  requestAnimationFrame(autoScroll);
+}
+
+certTrack.addEventListener('mouseenter', () => {
+  isPaused = true;
+});
+
+certTrack.addEventListener('mouseleave', () => {
+  isPaused = false;
+});
+
+// Optional: add drag-to-scroll handlers as I shared earlier for better UX
+
+autoScroll();
