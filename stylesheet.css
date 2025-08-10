@@ -562,7 +562,7 @@ html {
     }
 
     .about-text p {
-        font-size: 16px;
+        font-size: 1rem;
         margin-bottom: 1.5rem;
     }
 }
