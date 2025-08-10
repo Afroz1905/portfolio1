@@ -52,7 +52,7 @@ SAYED/EDIT#CREDLY" style="--i:9"><i class='bxr  bx-badge-check'></i></a>
         <div class="home-img">
             <div class="img-box">
                 <div class="img-item">
-                    <img src="https://th.bing.com/th/id/OIP.qOTAQ1esMlds40g_c7onGgHaE8?rs=1&pid=ImgDetMain" alt="image">
+                    <img src="portfolio_pic.jpg" alt="image">
                 </div>
             </div>
         </div>
@@ -63,7 +63,7 @@ SAYED/EDIT#CREDLY" style="--i:9"><i class='bxr  bx-badge-check'></i></a>
             <div class="home-img" style="margin-left: 120px;">
                 <div class="img-box">
                     <div class="img-item">
-                        <img src="https://th.bing.com/th/id/OIP.qOTAQ1esMlds40g_c7onGgHaE8?rs=1&pid=ImgDetMain"
+                        <img src="portfolio_pic.jpg"
                             alt="image">
                     </div>
                 </div>
@@ -352,22 +352,27 @@ Passionate about building innovative tech solutions and aiming to grow into
         <i class='bx bx-message-alt-dots'></i>
       </div>
     </div>
-    <form class="contact-form" autocomplete="off">
-      <h3>Send me a message</h3>
-      <div class="input-group">
-        <input type="text" id="name" required placeholder=" " />
-        <label for="name">Your Name</label>
-      </div>
-      <div class="input-group">
-        <input type="email" id="email" required placeholder=" " />
-        <label for="email">Your Email</label>
-      </div>
-      <div class="input-group">
-        <textarea id="message" rows="5" required placeholder=" "></textarea>
-        <label for="message">Your Message</label>
-      </div>
-      <button type="submit">Send</button>
-    </form>
+    <form class="contact-form" autocomplete="off" action="https://formspree.io/f/xyzplprl" method="POST">
+  <h3>Send me a message</h3>
+  
+  <div class="input-group">
+    <input type="text" id="name" name="name" required placeholder=" " />
+    <label for="name">Your Name</label>
+  </div>
+  
+  <div class="input-group">
+    <input type="email" id="email" name="_replyto" required placeholder=" " />
+    <label for="email">Your Email</label>
+  </div>
+  
+  <div class="input-group">
+    <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+    <label for="message">Your Message</label>
+  </div>
+  
+  <button type="submit">Send</button>
+</form>
+
   </div>
 </section>
 
