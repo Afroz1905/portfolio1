@@ -567,6 +567,11 @@ html {
     }
 }
 
+@media (max-width: 768px) {
+    .about-img {
+        display: none;
+    }
+}
 
 section {
     display: flex;
